@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Plantilla Curriculum Vitae</title>
+</head>
+
+<body>
+
+    <?php
+    // Datos Personales
+    $nombre = "Delfín";
+    $apellidos = "Rojas Espina";
+    $fecha_nacimiento = "18/10/1987";
+    $foto = "foto.png"; //Vamos a suponer que hay un fichero con este nombre en la raíz
+
+    // Estudios
+    $centro_estudios = "Ilerna";
+    $ano_estudios = "2024";
+    $titulacion = "CFGS DAW";
+
+    // Experiencia laboral
+    $empresa = "Acerinox";
+    $puesto = "Operador";
+    $fecha_inicio = "Febrero 2018";
+    $fecha_fin = "Actualidad";
+    ?>
+
+    <h2>Datos Personales</h2>
+    <p><strong>Nombre: </strong><?php echo $nombre ?></p>
+    <p><strong>Apellidos:</strong> <?php echo $apellidos ?></p>
+    <p><strong>Fecha de Nacimiento:</strong> <?php echo $fecha_nacimiento ?></p>
+    <img src='<?php echo $foto ?>' alt='Fotografía' width='200'>;
+
+
+    <h2>Estudios</h2>
+    <?php
+    echo "Centro de Estudios:".$centro_estudios."</p>";
+    echo "<p><strong>Año de Estudios:</strong> $ano_estudios</p>";
+    echo "<p><strong>Titulación:</strong> $titulacion</p>";
+    ?>
+
+    <h2>Experiencia Laboral</h2>
+    <?php
+    // Última Experiencia Laboral
+    echo "<p><strong>Empresa:</strong> $empresa</p>";
+    echo "<p><strong>Puesto:</strong> $puesto</p>";
+    echo "<p><strong>Fecha de Inicio:</strong> $fecha_inicio</p>";
+    echo "<p><strong>Fecha de Fin:</strong> $fecha_fin</p>";
+    ?>
+</body>
+
+</html>
